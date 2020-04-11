@@ -1,0 +1,4 @@
+image: node:4-alpine
+script:
+  - npm install -g dockerlint && npm cache clean
+  - dockerlint Dockerfile
